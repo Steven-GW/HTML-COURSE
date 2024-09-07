@@ -11,11 +11,10 @@
 	</head>
 	
 	<body>
+	<header>
 		<h1>Short Term Goals</h1>
 
-		<hr>
-
-		<nav>
+		<nav aria-label="primary-navigation">
 			<ul>
 				<li>
 					<a href="#html">Learning HTML</a>
@@ -26,10 +25,15 @@
 				</li>
 			</ul>
 		</nav>
-		
-		<section id="html">
+	</header>
+
+		<hr>
+	<main>
+		<article id="html">
 		<h2>I'm ready to learn HTML.</h2>
 		<p>This is my first web page.</p>
+		<section>
+			<h3>HTML5</h3>
 		<img src="img/html_logo_300x300.png" alt="HTML5 Logo" 
 		title="I am learning HTML5" width="300" height="300" >
 
@@ -39,7 +43,8 @@
 				<code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
 			</p>
 		</figure>
-
+	</section>
+	<section>
 		<h3>My Daily Schedule</h3>
 		<p>Let me tell you how: </p>
 		<ol>
@@ -48,18 +53,27 @@
 		   <li>...I use resources from <abbr 
 			title="Mozilla Developer Network"><a href="https://developer.mozilla.org/">MDN</a></abbr>.
 		   </li>
-		</ol> 
-		</section>
+		</ol>
+		<aside>
+			<details>
+				<summary>Guess the <mark>number of hours</mark> I code a day</summary>
+				<p>I start at <time datetime="08:00">8 am</time> and I write code for 
+					<time datetime="PT3H">3 hours</time>  every morning</p>
+			</details>
+		</aside> 
+	</section>
+	</article>
 
 		<hr>
 		
-		<section id="vacation">
+	<article id="vacation">
 		<h2>I am also planning a vacation.</h2>
 		<p>I've been working hard and <em>really need
 			a getaway</em>. </p>
 		<p>I live in <abbr title="Kansas">KS</abbr> so I want to visit
 		   a beach. </p>
-
+		
+		<section>
 		<h3>Places I'd like to visit.</h3>
 		<ul>
 			<li>
@@ -93,8 +107,9 @@
 			</li>
 		</ul>
 
-		
+	</section>
 		<!-- TODO: Add more places.-->
+	<section>
 		<h3>Places I want to avoid.</h3>
 		<dl>
 			<dt>North Pole</dt>
@@ -107,12 +122,19 @@
 			<dd>These are also cold.</dd>
 
 		</dl>
+	</section>
 
-		</section>
+	</article>
+	</main>
 		<hr>
-
-		&lt;&lt;&lt; &copy; <a href="about.html">Steven Witbooi</a> &gt;&gt;&gt; <br><br>
-		<a href="#">Back to Top</a>
+	<footer>	
+		<p>
+			&lt;&lt;&lt; &copy; <a href="about.html">Steven Witbooi</a> &gt;&gt;&gt; <br><br>
+		</p>
+		<p>
+			<a href="#">Back to Top</a>
+		</p>
+	</footer>
 	</body>
 	
 </html>
