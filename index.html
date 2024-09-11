@@ -187,6 +187,8 @@
 
 		<form action="https://httpbin.org/get"
 		method="get">
+		<fieldset>
+			<legend>Personal Info</legend>
 			<p>
 				<label for="firstName">First Name:</label>
 				<input type="text" name="firstName" id="firstName"
@@ -230,6 +232,35 @@
 				</select>
 			</p>
 
+			<!-- <p>
+				<label for="coffee">Favorite Coffee</label>
+				<input type="text" name="coffee" id="coffee" list="coffee-list">
+				<datalist id="coffee-list">
+					<option value="coffee">
+					<option value="latte">
+					<option value="espresso">
+					<option value="cortado">
+					<option value="americano">
+					<option value="other">
+				</datalist>
+			</p> -->
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>What is your favorite food?</legend>
+			<p>
+				<input type="radio" name="food" id="tacos" value="tacos">
+				<label for="tacos">Tacos</label>
+			</p>
+			<p>
+				<input type="radio" name="food" id="pizza" value="pizza">
+				<label for="pizza">Pizza</label>
+			</p>
+			<p>
+				<input type="radio" name="food" id="other" value="other">
+				<label for="other">Other</label>
+			</p>
+		</fieldset>
 		</form>
 	</article>
 
